@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>RealESRGAN</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="select_image_button">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>80</y>
+      <width>271</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Selecionar Imagem</string>
+    </property>
+    <property name="styleSheet">
+     <string>background-color: #4CAF50; color: white; font-weight: bold; border-radius: 5px;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="process_image_button">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>290</y>
+      <width>271</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Processar Imagem</string>
+    </property>
+    <property name="styleSheet">
+     <string>background-color: #4CAF50; color: white; font-weight: bold; border-radius: 5px;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="image_path">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>80</y>
+      <width>431</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Selecione uma imagem</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="scale_combobox">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>370</y>
+      <width>73</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="editable">
+     <bool>true</bool>
+    </property>
+    <property name="currentText">
+     <string>1</string>
+    </property>
+    <property name="maxVisibleItems">
+     <number>4</number>
+    </property>
+    <property name="sizeAdjustPolicy">
+     <enum>QComboBox::AdjustToContents</enum>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="progress_bar">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>200</y>
+      <width>271</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>0</number>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="textVisible">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="status_label">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>250</y>
+      <width>271</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Status: Aguardando seleção de imagem</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

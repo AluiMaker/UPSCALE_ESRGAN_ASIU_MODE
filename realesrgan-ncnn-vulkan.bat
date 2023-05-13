@@ -1,0 +1,1 @@
+realesrgan-ncnn-vulkan.exe -i "C:\Users\aluis\Downloads\realesrgan-ncnn-vulkan-20220424-windows\pil.png" -o "C:\Users\aluis\Downloads\realesrgan-ncnn-vulkan-20220424-windows\hpil.png" -s 4 -g 0 -n realesrgan-x4plus-anime -x -f png
